@@ -1,5 +1,8 @@
 <div class="container">
     <input type="text" class="form-control" [(ngModel)]="term" />
-    <div *ngIf="displayTerm">{{ term }}</div>
+    <div *ngIf="displayTerm; else noDisplay">{{ term }}</div>
+    <ng-template #noDisplay>
+        <div>Click on the button to see the input</div>
+    </ng-template>
     <button class="btn btn-primary" (click)="displayTerm = true">Submit</button>
 </div>
