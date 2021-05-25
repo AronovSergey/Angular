@@ -1,0 +1,9 @@
+<div
+    class="container"
+    *ngFor="let activity of activities; let i = index"
+    [ngStyle]="{ backgroundColor: i > 1 ? 'yellow' : 'transparent' }"
+>
+    {{ activity.title + " " + activity.owner }}
+</div>
+
+<app-activity *ngFor="let activity of activities"></app-activity>

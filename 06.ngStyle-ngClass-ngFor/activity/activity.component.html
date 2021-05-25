@@ -1,0 +1,10 @@
+<div class="container">
+    <h2>{{ title }}</h2>
+    <h3>Activity owner name: {{ owner }}</h3>
+    <h3
+        [ngStyle]="{ color: getColor() }"
+        [ngClass]="{ active: isActive === true }"
+    >
+        {{ isActive ? "active" : "not active" }}
+    </h3>
+</div>
