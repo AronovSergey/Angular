@@ -1,0 +1,7 @@
+<div class="container">
+    <app-cockpit (taskCreated)="onNewTaskAdded($event)"></app-cockpit>
+    <br />
+    <br />
+    <br />
+    <app-task *ngFor="let task of tasks" [taskProperties]="task"></app-task>
+</div>
