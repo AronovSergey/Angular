@@ -1,0 +1,50 @@
+.item {
+    left: -8%;
+    width: 108%;
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background: #f2f2f2;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding: 0 15px;
+    overflow: hidden;
+}
+
+.icon {
+    position: absolute;
+    text-align: center;
+    color: white;
+    width: 45px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    outline: inherit;
+}
+
+.item__cheak_icon {
+    right: -45px;
+    border-radius: 3px 0 0 3px;
+    background: #ffd814;
+    padding-top: 2px;
+}
+
+.item__trash_icon {
+    right: -90px;
+    background: #ffa41c;
+    padding-top: 8px;
+}
+
+.item:hover .item__cheak_icon {
+    right: 45px;
+}
+
+.item:hover .item__trash_icon {
+    right: 0px;
+}
+
+.line-through {
+    text-decoration: line-through;
+    color: red;
+}

@@ -1,0 +1,29 @@
+.new-item {
+    display: flex;
+    height: 45px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.new-item__input {
+    width: 85%;
+    height: 100%;
+    border: 1px solid #ccc;
+    font-size: 17px;
+    border-radius: 3px;
+    padding-left: 15px;
+    outline: none;
+}
+
+.new-item__button {
+    width: 60px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: #8e49e8;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+}

@@ -1,0 +1,13 @@
+<div class="page">
+    <div class="container">
+        <div class="header">To Do List</div>
+        <app-new-task (addTask)="onAddTask($event)"></app-new-task>
+        <ol>
+            <app-task
+                *ngFor="let task of tasks"
+                [task]="task"
+                (removeTask)="onRemoveTask(task)"
+            ></app-task>
+        </ol>
+    </div>
+</div>
