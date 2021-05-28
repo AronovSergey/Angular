@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-offset-2">
+            <ul class="nav nav-tabs">
+                <li
+                    role="presentation"
+                    routerLinkActive="active"
+                    [routerLinkActiveOptions]="{ exact: true }"
+                >
+                    <a routerLink="/">Home</a>
+                </li>
+                <li role="presentation" routerLinkActive="active">
+                    <a routerLink="/one">Page One</a>
+                </li>
+                <li role="presentation" routerLinkActive="active">
+                    <a routerLink="/two">Page Two</a>
+                </li>
+                <li role="presentation" routerLinkActive="active">
+                    <a [routerLink]="['/three']">Page Three</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-offset-2">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
